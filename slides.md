@@ -16,9 +16,7 @@ Ben Limmer
 
 ## Ember Community Survey
 
-```notes
 nearly 1600 responses, done every year with emberconf
-```
 
 ---
 
@@ -26,9 +24,7 @@ nearly 1600 responses, done every year with emberconf
 
 ![](/images/survey/by_version.png)
 
-```notes
 many people are using LTS versions, though lots keep up to date with the most current, likely because of glimmer 2.
-```
 
 ---
 
@@ -42,18 +38,14 @@ many people are using LTS versions, though lots keep up to date with the most cu
 
 ![](/images/survey/how_long_using_ember.png)
 
-```notes
 almost half of survey participants using ember for > 2 years
-```
 
 ---
 ## "How many people use your apps?"
 
 ![](/images/survey/how_many_people_use.png)
 
-```notes
 most target hundreds or thousands of users
-```
 
 ---
 ## "What does the server stack look like?"
@@ -89,9 +81,12 @@ A great summary since the last EmberConf and what's next.
 ---
 
 ## What Went Well
-* fastboot
-* engines
-* glimmer
+* [fastboot](https://ember-fastboot.com/)
+  * server-side pre-rendering of ember applications for speed and SEO
+* [engines](https://github.com/ember-engines/ember-engines)
+  * isolated, composable applications (similar to rails engines)
+* [glimmer](https://glimmerjs.com/)
+  * a performant rendering engine that was drop-in compatible with existing ember apps
 
 ---
 
@@ -107,13 +102,27 @@ A great summary since the last EmberConf and what's next.
 * No more root attribute (template is the root)
 * True es6 class syntax
 * Typescript
-* es6 getters and setters
+* es6 getters and setters (no `.get` and `.set` in glimmer)
 
 ---
 
 ## Glimmer Performance
 
-* Uses a wire-format to describe DOM operations (slim)
+* Ahead of time wire-format to describe DOM operations (slim)
+```
+// Top-Level Template
+["open-element","h1",[]]
+["flush-element"]
+["append",["unknown",["title"]],false]
+["close-element"]
+["text","\n"]
+["open-element","div",[]]
+["static-attr","class","posts"]
+["flush-element"]
+["text","\n"]
+["block",["each"],[["get",["posts"]]],[["key"],["id"]],0]
+["close-element"]
+```
 * 'boot up fast and stay fast once booted'
 
 ---
@@ -129,21 +138,21 @@ A great summary since the last EmberConf and what's next.
 ## Future of Glimmer and Ember
 * "this is the component API we want for Ember"
 * "ember is still the choice for big web applications"
-* "glimmer is the choice for small mobile apps that need to be very :racehorse:"
+* "glimmer is the choice for small mobile apps that need to be very performant" 
 
 ---
 
 ## What Did Not Go Well
 * communication of...
-* `<angle-bracket>` syntax
-* routable components
-* pods
+  * `<angle-bracket>` syntax
+  * routable components
+  * pods
 
 ---
 
 ## How to Mitigate in the Future
-* Unlock experimentation via a small kernal with hooks
-* Early adopters experiment with the addon
+* Unlock experimentation via a small kernel with hooks
+* Early adopters experiment with the add-on
 * Once things are drop-in compatible, consider merging
 
 ---
@@ -299,7 +308,7 @@ no slides yet
 * tumblr is not an ember app
 * done as part of a hack-day
 * created POC in Ember and React
-* testiment to ember's addon-community and ease-of-use
+* testament to ember's add-on community and ease-of-use
 
 ---
 
@@ -332,3 +341,349 @@ no slides yet
 
 ***
 ***
+
+## Data Loading Patterns with JSON API
+* [Balint Erdi](https://twitter.com/baaz)
+* Ember Consultant in Budapest
+
+![](/images/speakers/balint-erdi.jpg)
+[slides](https://speakerdeck.com/balint/data-loading-patterns-with-json-api)
+
+---
+
+## Discusses:
+* the basics of ember-data's API
+* data fetching strategies (lazy fetching, preloading, side-loading)
+* searching
+* sorting
+* pagination
+
+---
+
+## watch this talk if interested in...
+* how to use ember-data
+* learning how to expose data from an API to a front-end app
+* JSON API
+* server-side sorting, searching and pagination
+
+***
+***
+
+## Higher Order Components
+
+* Miguel Camba
+* Ember, Ruby and Elixir Consultant in London
+
+![](/images/speakers/miguel-camba.png)
+[game](https://gist.github.com/cibernox/5a46bb73d5690679a7fe07f6b4a5e55e)
+
+---
+
+this presentation was :raised_hands:
+
+---
+
+## Discusses:
+* utilizing contextual components
+* using `yield`, `hash` and `component` helpers
+* focuses on how to compose components to keep them clean
+
+---
+
+## watch this talk if interested in...
+* how to build clean ember components
+* composability concepts in ember
+* creating clean separation between container and presentational components
+
+***
+***
+
+## Empowering the Next Million Creators
+
+* [Edward Faulkner](https://twitter.com/eaf4)
+* Ember Core Team member, creator of Liquid Fire (ember's animation library)
+
+![](/images/speakers/edward-faulkner.png)
+[cardstack](http://cardstack.io/)
+
+---
+
+this presentation is potentially very relevant to the future of the ibotta website  
+:sun_with_face:
+
+---
+
+> Our mission is to build a Card Ecosystem based on Open Web technologies and Open Source ethos that fights back against rampant lock-in.
+
+---
+
+![](/images/edward_faulkner/cardstack-flow.png)
+
+---
+
+## cardstack allows you to...
+* use a CMS (like Drupal) for data persistence
+* allow a web developer to set up the template for the page
+* allows (non-technical) users to edit content in-line
+* leverage git to "preview" changes
+* leverage elastic search for automatic full-text-search on content
+
+---
+
+## watch this talk if interested in...
+* building an app that will be frequently edited / appended after delivery
+* leveraging the power of a CMS to drive the content for an ember app
+* helping build the future of ibotta.com
+
+***
+***
+
+## SVG Animation and Interaction in Ember
+
+* [Jen Weber](https://twitter.com/jwwweber)
+* UI/UX Developer at BioBright 
+
+![](/images/speakers/jen-weber.jpg)
+[slides](https://drive.google.com/file/d/0BxL5EMSDOzzwOVhaeE1kNi0xWUk/view)
+
+---
+
+## Discusses how to...
+* create an SVG-driven component
+* make an SVG more accessible
+* optimize SVGs
+
+---
+
+## watch this talk if interested in...
+* SVG
+  * optimization
+  * creation
+  * animation
+
+***
+***
+
+## Mastering Ember from the Perspective of a N00b
+
+* [Madison Kerndt](https://twitter.com/mkerndt)
+* Technical Associate at TechStars, attended Turing School
+
+![](/images/speakers/madison-kerndt.jpg)
+slides not available yet
+
+---
+
+## Discusses:
+* the challenges of learning ember as a self-proclaimed n00b in Turing School
+* dreyfus model of skill acquisition
+  * novice
+  * competence
+  * proficiency
+  * expertise
+  * mastery
+
+---
+
+## watch this talk if interested in...
+* hearing the challenges of approaching a framework with no dev background
+* learning more about the dreyfus model
+
+***
+***
+
+## State, Time and Concurrency 
+
+* [Alex Matchneer](https://twitter.com/machty)
+* Ember Core Team Emeritus, FutureProof Retail 
+
+![](/images/speakers/alex-matchneer.png)
+[slides](http://machty.s3.amazonaws.com/emberconf2017/index.html)
+
+---
+
+## Discusses
+* "the user is an async operation"
+* ember-concurrency
+* utilizing derived state from `task`s *\**
+
+---
+
+## watch this talk if interested in...
+* getting rid of flags in your code like `isSending`
+* ember-concurrency *(srsly if you're not using it, look into this talk)*
+* "the fourth dimension" of async tasks
+* why "the user is an async operation"
+
+***
+***
+
+## Confessions of an Ember Add-on Author 
+
+* [Lauren Tan](https://twitter.com/sugarpirate_)
+* Engineer at Netflix
+
+![](/images/speakers/lauren-tan.jpg)
+[slides](https://speakerdeck.com/poteto/emberconf-2017-confessions-of-an-ember-addon-author)
+
+---
+
+## Discusses:
+* What (generally speaking) makes a good OSS project:
+  * "It solves a useful problem"
+  * "People are convinced your solution is the best for their problem"
+* Provides a good Developer Experience:
+  * Good documentation
+  * Demo
+  * Good testing
+  * Clear Configuration Instructions
+
+---
+
+## watch this talk if...
+* you have (or are considering) open-sourcing a project
+* you want to know more about how an ember add-on is built
+* you want to know more about ember-cli's hooks for add-ons
+
+***
+***
+
+## Spin Me a Yarn 
+
+* [Serena Frisch](https://twitter.com/serifritsch)
+* Product Engineer at Intercom
+
+![](/images/speakers/serena-fritsch.png)
+slides not available yet
+
+---
+
+started off with a most excellent joke about
+
+![](/images/serena_frisch/angular_merkel.png)
+
+---
+
+## Discusses...
+* issues with npm (and why they're issues)
+  * non-determinism
+  * performance
+* how yarn is different
+  * consistent, reliable dependency resolution
+* how a `npm install` works, step-by-step
+* how a `yarn install` works, step-by-step
+
+---
+
+## watch this talk if...
+* you don't know about how yarn is different from npm
+* you're not using yarn yet
+* you want to know why npm is, by definition, non-deterministic
+* you want to learn how npm / yarn install work
+
+***
+***
+
+## An Animated Guide to Ember Internals
+
+* [Gavin Joyce](https://twitter.com/gavinjoyce)
+* Engineer at Intercom
+
+![](/images/speakers/gavin-joyce.jpg)
+slides not available yet
+
+---
+
+## Discusses:
+* the fundamental difference between a traditional and closure action
+* how the glimmer VM builds and flushes a stack (with amazing animations)
+
+---
+
+## watch this talk if...
+* you're curious about how the glimmer VM works
+* why closure actions are exciting in ember
+* you want to be wow-ed by great animations
+
+***
+***
+
+## Closing Keynote 
+
+* [Sarah Mei](https://twitter.com/sarahmei)
+* Founder of RailsBridge, Consultant, Dev
+
+![](/images/speakers/sarah-mei.png)
+slides not available yet
+
+---
+
+a really great talk :raised_hands:
+if you're a dev working on a team, watch it!
+
+---
+
+## Codebase as a home
+
+> our code is a place we live
+
+---
+
+## Codebase as a home
+
+* it's not something to be "finished"
+* it should be "livable for the devs who live there"
+  * this will look different depending on the kinds of devs who live there
+* getting a new team member is like getting a new roommate
+  * they might bring their old couch :laughing:
+  * they **will** change what it's like to live there
+
+---
+
+## "Hoarding" parallel
+* clutter/problems in a codebase appear over time, not all at once
+* cleaning up all at once will not fix the problem
+  * e.g. with a big refactor or rewrite
+  * the **people who live there** will not change
+
+---
+
+## Cleaning Up Tech Debt
+* do it piece-by-piece
+  * it's like cleaning your house
+  * make it part of your routine to clean as you go
+* don't make things worse
+* value improvement over consistency
+* do refactoring inline
+  * clean up problems as you see them
+
+---
+
+## Dealing with Tech Debt
+
+### Don't...
+* Ask for permission. This is part of your job!
+* Ask for forgiveness. but, learn everytime!
+
+### Do...
+* Ask for advice on refactoring. but, don't always take the advice!
+* Work together because you all live here!
+
+---
+
+## watch this video if...
+* you're a developer working on a team
+* you're working for a company that's high-growth
+
+***
+
+Thank you for listening! :ear:
+
+---
+
+## Questions?
+
+Slides can be found at [http://bit.ly/emberconf-2017](http://bit.ly/emberconf-2017)
+
+Ben Limmer  
+@blimmer
