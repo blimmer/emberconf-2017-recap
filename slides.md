@@ -98,6 +98,10 @@ A great summary since the last EmberConf and what's next.
 
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i2rwIApjz-4" frameborder="0" allowfullscreen></iframe>
+
+---
+
 ## Glimmer Specifics
 * No more root attribute (template is the root)
 * True es6 class syntax
@@ -332,6 +336,8 @@ no slides yet
 * keyframe animation
 * web animation API
 
+![](/images/jessica_jordan/animation.gif)
+
 ---
 
 ## watch this talk if interested in...
@@ -394,6 +400,17 @@ this presentation was :raised_hands:
 * how to build clean ember components
 * composability concepts in ember
 * creating clean separation between container and presentational components
+
+---
+
+## shameless plug...
+[my presentation on composability](https://www.slideshare.net/BenLimmer/fun-with-ember-2x-features)
+
+***
+***
+
+## end of day 1!
+questions?
 
 ***
 ***
