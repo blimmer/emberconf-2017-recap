@@ -1,0 +1,1033 @@
+<section>
+
+<h1>EmberConf 2017 Recap</h1>
+
+<p>Ben Limmer  <br>
+<a href="https://github.com/blimmer" class="user-mention">@blimmer</a></p>
+
+<p>4/11/2017</p>
+
+</section>
+<section>
+
+<h2>Ember Community Survey</h2>
+<h2>Keynote</h2>
+<h2>Talk by Talk</h2>
+<h2>Questions from the <img class="emoji" alt=":peanuts:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f95c.png"> gallery</h2>
+
+</section>
+<section>
+<section>
+
+<h2>Ember Community Survey</h2>
+
+<p>nearly 1600 responses, done every year with emberconf</p>
+
+</section>
+<section>
+
+<h2>By Version</h2>
+
+<p><img src="/images/survey/by_version.png" alt=""></p>
+
+<p>many people are using LTS versions, though lots keep up to date with the most current, likely because of glimmer 2.</p>
+
+</section>
+<section>
+
+<h2>“How can we improve Ember?”</h2>
+
+<blockquote>
+  <p>Performance was a common theme regardless of experience with Ember. Documentation and guide improvement requests were more common from developers with less Ember experience while requests for tree shaking, routable components and mobile support were more prevalent among experienced Ember developers.</p>
+</blockquote>
+
+</section>
+<section>
+
+<h2>“How long have you been working with Ember?”</h2>
+
+<p><img src="/images/survey/how_long_using_ember.png" alt=""></p>
+
+<p>almost half of survey participants using ember for &gt; 2 years</p>
+
+</section>
+<section>
+
+<h2>“How many people use your apps?”</h2>
+
+<p><img src="/images/survey/how_many_people_use.png" alt=""></p>
+
+<p>most target hundreds or thousands of users</p>
+
+</section>
+<section>
+
+<h2>“What does the server stack look like?”</h2>
+
+<p><img src="/images/survey/server_lang.png" alt=""></p>
+
+</section>
+<section>
+
+<p><a href="https://emberjs.com/ember-community-survey-2017/">View Community Survey</a></p>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Keynote</h2>
+
+<p>A great summary since the last EmberConf and what’s next.</p>
+
+</section>
+<section>
+
+<h2>Speakers</h2>
+
+<ul>
+  <li>
+<a href="https://twitter.com/wycats">Yehuda Katz</a> (Ember, RoR, jQuery core teams, yarn, hbs, etc, etc)</li>
+  <li>
+<a href="https://twitter.com/tomdale">Tom Dale</a> (Ember Core Team)</li>
+</ul>
+
+</section>
+<section>
+
+<h2>Main Topics</h2>
+<ul>
+  <li>Things that went well in 2.x</li>
+  <li>Glimmer Deep(ish)-dive</li>
+  <li>Things that didn’t go well in 2.x</li>
+  <li>The future of Ember</li>
+</ul>
+
+</section>
+<section>
+
+<h2>What Went Well</h2>
+<ul>
+  <li>
+<a href="https://ember-fastboot.com/">fastboot</a>
+    <ul>
+      <li>server-side pre-rendering of ember applications for speed and SEO</li>
+    </ul>
+  </li>
+  <li>
+<a href="https://github.com/ember-engines/ember-engines">engines</a>
+    <ul>
+      <li>isolated, composable applications (similar to rails engines)</li>
+    </ul>
+  </li>
+  <li>
+<a href="https://glimmerjs.com/">glimmer</a>
+    <ul>
+      <li>a performant rendering engine that was drop-in compatible with existing ember apps</li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+<section>
+
+<h2>Glimmer</h2>
+
+<ul>
+  <li>The third iteration of the rendering engine used by ember</li>
+  <li>Now available stand-alone as <a href="http://glimmerjs.com/">glimmer.js</a>
+</li>
+  <li>glimmer 2 was a <strong>drop-in replacement</strong>
+</li>
+</ul>
+
+</section>
+<section>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i2rwIApjz-4" frameborder="0" allowfullscreen=""></iframe>
+
+</section>
+<section>
+
+<h2>Glimmer Specifics</h2>
+<ul>
+  <li>No more root attribute (template is the root)</li>
+  <li>True es6 class syntax</li>
+  <li>Typescript</li>
+  <li>es6 getters and setters (no <code>.get</code> and <code>.set</code> in glimmer)</li>
+</ul>
+
+</section>
+<section>
+
+<h2>Glimmer Performance</h2>
+
+<ul>
+  <li>Ahead of time wire-format to describe DOM operations (slim)
+    <pre><code>// Top-Level Template
+["open-element","h1",[]]
+["flush-element"]
+["append",["unknown",["title"]],false]
+["close-element"]
+["text","\n"]
+["open-element","div",[]]
+["static-attr","class","posts"]
+["flush-element"]
+["text","\n"]
+["block",["each"],[["get",["posts"]]],[["key"],["id"]],0]
+["close-element"]
+</code></pre>
+  </li>
+  <li>‘boot up fast and stay fast once booted’</li>
+</ul>
+
+</section>
+<section>
+
+<p><img src="/images/glimmer/initial_render.png" alt=""></p>
+
+</section>
+<section>
+
+<p><img src="/images/glimmer/update.png" alt=""></p>
+
+</section>
+<section>
+
+<h2>Future of Glimmer and Ember</h2>
+<ul>
+  <li>“this is the component API we want for Ember”</li>
+  <li>“ember is still the choice for big web applications”</li>
+  <li>“glimmer is the choice for small mobile apps that need to be very performant”</li>
+</ul>
+
+</section>
+<section>
+
+<h2>What Did Not Go Well</h2>
+<ul>
+  <li>communication of…
+    <ul>
+      <li>
+<code>&lt;angle-bracket&gt;</code> syntax</li>
+      <li>routable components</li>
+      <li>pods</li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+<section>
+
+<h2>How to Mitigate in the Future</h2>
+<ul>
+  <li>Unlock experimentation via a small kernel with hooks</li>
+  <li>Early adopters experiment with the add-on</li>
+  <li>Once things are drop-in compatible, consider merging</li>
+</ul>
+
+</section>
+<section>
+
+<h2>Future of Ember</h2>
+
+<p><img src="images/glimmer/ember_continuum.png" alt=""></p>
+
+</section>
+<section>
+
+<p><img src="/images/glimmer/size_comp.png" alt=""></p>
+
+</section>
+<section>
+
+<h2>Questions?</h2>
+
+<p><img class="emoji" alt=":hamster:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f439.png"></p>
+
+</section>
+</section>
+<section>
+
+<h2>Talk by Talk</h2>
+
+</section>
+<section>
+<section>
+
+<h2>Going Progressive with Ember</h2>
+
+<ul>
+  <li><a href="https://twitter.com/sami_dbc">Samanta de Barros</a></li>
+  <li>Engineer at WyeWorks in Uruguay</li>
+</ul>
+
+<p><img src="/images/speakers/samanta-de-barros.jpg" alt=""><br>
+<a href="https://speakerdeck.com/sdebarros/going-progressive-with-ember">slides</a></p>
+
+</section>
+<section>
+
+<h2>What is a progressive app?</h2>
+<ul>
+  <li>native-app like functionality from a web app
+    <ul>
+      <li>looks good</li>
+      <li>installs on device (fast second boot)</li>
+      <li>works offline</li>
+      <li>is fast</li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+<section>
+
+<h2>watch this talk if interested in…</h2>
+<ul>
+  <li>app manifests</li>
+  <li>appcache</li>
+  <li>service workers</li>
+  <li>localforage</li>
+  <li>offline web apps</li>
+</ul>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>A Neurobiologist’s Guide to Mind Manipulation</h2>
+<ul>
+  <li><a href="https://twitter.com/kyloma">Casey Watts</a></li>
+  <li>Engineer at Heroku, background in Software &amp; Psychology</li>
+</ul>
+
+<p><img src="/images/speakers/casey-watts.jpg" alt=""><br>
+<a href="https://www.slideshare.net/CaseyWatts/neurobiologists-guide-to-mind-manipulation-08">slides</a></p>
+
+</section>
+<section>
+
+<h2>Discusses how to…</h2>
+<ul>
+  <li>improve processing emotions</li>
+  <li>improve processing thoughts</li>
+  <li>interact more effectively with coworkers</li>
+</ul>
+
+</section>
+<section>
+
+<p><img src="/images/casey_watts/unhelpful_thinking_styles.png" alt=""></p>
+
+</section>
+<section>
+
+<h2>watch this talk if interested in…</h2>
+<ul>
+  <li>something more non-technical</li>
+  <li>learning more about “cognitive restructuring”</li>
+</ul>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Understanding JavaScript Performance</h2>
+<ul>
+  <li><a href="https://twitter.com/chancancode">Godfrey Chan</a></li>
+  <li>Ruby on Rails and Ember Core Team Member</li>
+</ul>
+
+<p><img src="/images/speakers/godfrey-chan.jpg" alt=""><br>
+<a href="https://speakerdeck.com/chancancode/understanding-javascript-performance">slides</a></p>
+
+</section>
+<section>
+
+<h2>also <code>gem install canada</code>
+</h2>
+
+<pre><code>&gt;&gt; [].empty_eh?
+=&gt; true
+&gt;&gt; [1,2,3].empty_eh?
+=&gt; false
+&gt;&gt; [].respond_to_eh?(:empty_eh?)
+=&gt; true
+&gt;&gt; aboot Object.new
+=&gt; "#&lt;Object:0x007f802b8b92c0&gt;"
+</code></pre>
+
+</section>
+<section>
+
+<h2>Discusses how to…</h2>
+<ul>
+  <li>debug performance in
+    <ul>
+      <li>your code</li>
+      <li>the framework</li>
+      <li>in v8</li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+<section>
+
+<h2>watch this talk if interested in…</h2>
+<ul>
+  <li>JavaScript performance debugging techniques</li>
+  <li>the performance tab of Chrome dev-tools</li>
+  <li>v8 internals</li>
+</ul>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Counter-spells and the Art of Keeping Your Application Safe</h2>
+<ul>
+  <li><a href="https://twitter.com/ingridepure">Ingrid Epure</a></li>
+  <li>Full-Stack Engineer at Intercom in Scotland</li>
+</ul>
+
+<p><img src="/images/speakers/ingrid-epure.jpeg" alt=""><br>
+<a href="https://speakerdeck.com/ingride/counter-spells-and-the-art-of-keeping-you-application-safe">slides</a></p>
+
+</section>
+<section>
+
+<h2>Discusses:</h2>
+<ul>
+  <li>how to use the browser’s content security policy to mitigate xss</li>
+  <li>dangers of <code>htmlSafe</code>
+</li>
+  <li>using helpers to sanitize html content in user input</li>
+  <li>OWASP <a href="https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project">Top 10 List</a>
+</li>
+</ul>
+
+</section>
+<section>
+
+<h2>watch this talk if interested in…</h2>
+<ul>
+  <li>securing a front-end application</li>
+  <li>common attacks on web apps</li>
+</ul>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Rebuilding Tumblr as a Single Page App</h2>
+<ul>
+  <li><a href="https://twitter.com/Oligriffiths">Oli Griffiths</a></li>
+  <li>Engineer at Tumblr</li>
+</ul>
+
+<p><img src="/images/speakers/oli-griffiths.png" alt=""><br>
+no slides yet</p>
+
+</section>
+<section>
+
+<ul>
+  <li>tumblr is not an ember app</li>
+  <li>done as part of a hack-day</li>
+  <li>created POC in Ember and React</li>
+  <li>testament to ember’s add-on community and ease-of-use</li>
+</ul>
+
+</section>
+<section>
+
+<h2>watch this talk if interested in…</h2>
+<ul>
+  <li>addressing how to rebuild an app with ember</li>
+</ul>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Animate the Web with Ember.js</h2>
+<ul>
+  <li><a href="https://twitter.com/jjordan_dev">Jessica Jordan</a></li>
+  <li>Biologist turned Front-End Engineer</li>
+</ul>
+
+<p><img src="/images/speakers/jessica-jordan.jpg" alt=""><br>
+<a href="https://jessica-jordan.github.io/animate-the-web-with-emberjs">slides</a></p>
+
+</section>
+<section>
+
+<h2>Discusses:</h2>
+<ul>
+  <li>how to create an animated comic in ember</li>
+  <li>keyframe animation</li>
+  <li>web animation API</li>
+</ul>
+
+<p><img src="/images/jessica_jordan/animation.gif" alt=""></p>
+
+</section>
+<section>
+
+<h2>watch this talk if interested in…</h2>
+<ul>
+  <li>HTML5 Canvas</li>
+  <li>web animation API</li>
+  <li>comics and drawing</li>
+</ul>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Data Loading Patterns with JSON API</h2>
+<ul>
+  <li><a href="https://twitter.com/baaz">Balint Erdi</a></li>
+  <li>Ember Consultant in Budapest</li>
+</ul>
+
+<p><img src="/images/speakers/balint-erdi.jpg" alt=""><br>
+<a href="https://speakerdeck.com/balint/data-loading-patterns-with-json-api">slides</a></p>
+
+</section>
+<section>
+
+<h2>Discusses:</h2>
+<ul>
+  <li>the basics of ember-data’s API</li>
+  <li>data fetching strategies (lazy fetching, preloading, side-loading)</li>
+  <li>searching</li>
+  <li>sorting</li>
+  <li>pagination</li>
+</ul>
+
+</section>
+<section>
+
+<h2>watch this talk if interested in…</h2>
+<ul>
+  <li>how to use ember-data</li>
+  <li>learning how to expose data from an API to a front-end app</li>
+  <li>JSON API</li>
+  <li>server-side sorting, searching and pagination</li>
+</ul>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Higher Order Components</h2>
+
+<ul>
+  <li>Miguel Camba</li>
+  <li>Ember, Ruby and Elixir Consultant in London</li>
+</ul>
+
+<p><img src="/images/speakers/miguel-camba.png" alt=""><br>
+<a href="https://gist.github.com/cibernox/5a46bb73d5690679a7fe07f6b4a5e55e">game</a></p>
+
+</section>
+<section>
+
+<p>this presentation was <img class="emoji" alt=":raised_hands:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f64c.png"></p>
+
+</section>
+<section>
+
+<h2>Discusses:</h2>
+<ul>
+  <li>utilizing contextual components</li>
+  <li>using <code>yield</code>, <code>hash</code> and <code>component</code> helpers</li>
+  <li>focuses on how to compose components to keep them clean</li>
+</ul>
+
+</section>
+<section>
+
+<h2>watch this talk if interested in…</h2>
+<ul>
+  <li>how to build clean ember components</li>
+  <li>composability concepts in ember</li>
+  <li>creating clean separation between container and presentational components</li>
+</ul>
+
+</section>
+<section>
+
+<h2>shameless plug…</h2>
+<p><a href="https://www.slideshare.net/BenLimmer/fun-with-ember-2x-features">my presentation on composability</a></p>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>end of day 1!</h2>
+<p>questions?</p>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Empowering the Next Million Creators</h2>
+
+<ul>
+  <li><a href="https://twitter.com/eaf4">Edward Faulkner</a></li>
+  <li>Ember Core Team member, creator of Liquid Fire (ember’s animation library)</li>
+</ul>
+
+<p><img src="/images/speakers/edward-faulkner.png" alt=""><br>
+<a href="http://cardstack.io/">cardstack</a></p>
+
+</section>
+<section>
+
+<p>this presentation is potentially very relevant to the future of the ibotta website  <br>
+<img class="emoji" alt=":sun_with_face:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f31e.png"></p>
+
+</section>
+<section>
+
+<blockquote>
+  <p>Our mission is to build a Card Ecosystem based on Open Web technologies and Open Source ethos that fights back against rampant lock-in.</p>
+</blockquote>
+
+</section>
+<section>
+
+<p><img src="/images/edward_faulkner/cardstack-flow.png" alt=""></p>
+
+</section>
+<section>
+
+<h2>cardstack allows you to…</h2>
+<ul>
+  <li>use a CMS (like Drupal) for data persistence</li>
+  <li>allow a web developer to set up the template for the page</li>
+  <li>allows (non-technical) users to edit content in-line</li>
+  <li>leverage git to “preview” changes</li>
+  <li>leverage elastic search for automatic full-text-search on content</li>
+</ul>
+
+</section>
+<section>
+
+<h2>watch this talk if interested in…</h2>
+<ul>
+  <li>building an app that will be frequently edited / appended after delivery</li>
+  <li>leveraging the power of a CMS to drive the content for an ember app</li>
+  <li>helping build the future of ibotta.com</li>
+</ul>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>SVG Animation and Interaction in Ember</h2>
+
+<ul>
+  <li><a href="https://twitter.com/jwwweber">Jen Weber</a></li>
+  <li>UI/UX Developer at BioBright</li>
+</ul>
+
+<p><img src="/images/speakers/jen-weber.jpg" alt=""><br>
+<a href="https://drive.google.com/file/d/0BxL5EMSDOzzwOVhaeE1kNi0xWUk/view">slides</a></p>
+
+</section>
+<section>
+
+<h2>Discusses how to…</h2>
+<ul>
+  <li>create an SVG-driven component</li>
+  <li>make an SVG more accessible</li>
+  <li>optimize SVGs</li>
+</ul>
+
+</section>
+<section>
+
+<h2>watch this talk if interested in…</h2>
+<ul>
+  <li>SVG
+    <ul>
+      <li>optimization</li>
+      <li>creation</li>
+      <li>animation</li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Mastering Ember from the Perspective of a N00b</h2>
+
+<ul>
+  <li><a href="https://twitter.com/mkerndt">Madison Kerndt</a></li>
+  <li>Technical Associate at TechStars, attended Turing School</li>
+</ul>
+
+<p><img src="/images/speakers/madison-kerndt.jpg" alt=""><br>
+slides not available yet</p>
+
+</section>
+<section>
+
+<h2>Discusses:</h2>
+<ul>
+  <li>the challenges of learning ember as a self-proclaimed n00b in Turing School</li>
+  <li>dreyfus model of skill acquisition
+    <ul>
+      <li>novice</li>
+      <li>competence</li>
+      <li>proficiency</li>
+      <li>expertise</li>
+      <li>mastery</li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+<section>
+
+<h2>watch this talk if interested in…</h2>
+<ul>
+  <li>hearing the challenges of approaching a framework with no dev background</li>
+  <li>learning more about the dreyfus model</li>
+</ul>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>State, Time and Concurrency</h2>
+
+<ul>
+  <li><a href="https://twitter.com/machty">Alex Matchneer</a></li>
+  <li>Ember Core Team Emeritus, FutureProof Retail</li>
+</ul>
+
+<p><img src="/images/speakers/alex-matchneer.png" alt=""><br>
+<a href="http://machty.s3.amazonaws.com/emberconf2017/index.html">slides</a></p>
+
+</section>
+<section>
+
+<h2>Discusses</h2>
+<ul>
+  <li>“the user is an async operation”</li>
+  <li>ember-concurrency</li>
+  <li>utilizing derived state from <code>task</code>s <em>*</em>
+</li>
+</ul>
+
+</section>
+<section>
+
+<h2>watch this talk if interested in…</h2>
+<ul>
+  <li>getting rid of flags in your code like <code>isSending</code>
+</li>
+  <li>ember-concurrency <em>(srsly if you’re not using it, look into this talk)</em>
+</li>
+  <li>“the fourth dimension” of async tasks</li>
+  <li>why “the user is an async operation”</li>
+</ul>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Confessions of an Ember Add-on Author</h2>
+
+<ul>
+  <li><a href="https://twitter.com/sugarpirate_">Lauren Tan</a></li>
+  <li>Engineer at Netflix</li>
+</ul>
+
+<p><img src="/images/speakers/lauren-tan.jpg" alt=""><br>
+<a href="https://speakerdeck.com/poteto/emberconf-2017-confessions-of-an-ember-addon-author">slides</a></p>
+
+</section>
+<section>
+
+<h2>Discusses:</h2>
+<ul>
+  <li>What (generally speaking) makes a good OSS project:
+    <ul>
+      <li>“It solves a useful problem”</li>
+      <li>“People are convinced your solution is the best for their problem”</li>
+    </ul>
+  </li>
+  <li>Provides a good Developer Experience:
+    <ul>
+      <li>Good documentation</li>
+      <li>Demo</li>
+      <li>Good testing</li>
+      <li>Clear Configuration Instructions</li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+<section>
+
+<h2>watch this talk if…</h2>
+<ul>
+  <li>you have (or are considering) open-sourcing a project</li>
+  <li>you want to know more about how an ember add-on is built</li>
+  <li>you want to know more about ember-cli’s hooks for add-ons</li>
+</ul>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Spin Me a Yarn</h2>
+
+<ul>
+  <li><a href="https://twitter.com/serifritsch">Serena Frisch</a></li>
+  <li>Product Engineer at Intercom</li>
+</ul>
+
+<p><img src="/images/speakers/serena-fritsch.png" alt=""><br>
+slides not available yet</p>
+
+</section>
+<section>
+
+<p>started off with a most excellent joke about</p>
+
+<p><img src="/images/serena_frisch/angular_merkel.png" alt=""></p>
+
+</section>
+<section>
+
+<h2>Discusses…</h2>
+<ul>
+  <li>issues with npm (and why they’re issues)
+    <ul>
+      <li>non-determinism</li>
+      <li>performance</li>
+    </ul>
+  </li>
+  <li>how yarn is different
+    <ul>
+      <li>consistent, reliable dependency resolution</li>
+    </ul>
+  </li>
+  <li>how a <code>npm install</code> works, step-by-step</li>
+  <li>how a <code>yarn install</code> works, step-by-step</li>
+</ul>
+
+</section>
+<section>
+
+<h2>watch this talk if…</h2>
+<ul>
+  <li>you don’t know about how yarn is different from npm</li>
+  <li>you’re not using yarn yet</li>
+  <li>you want to know why npm is, by definition, non-deterministic</li>
+  <li>you want to learn how npm / yarn install work</li>
+</ul>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>An Animated Guide to Ember Internals</h2>
+
+<ul>
+  <li><a href="https://twitter.com/gavinjoyce">Gavin Joyce</a></li>
+  <li>Engineer at Intercom</li>
+</ul>
+
+<p><img src="/images/speakers/gavin-joyce.jpg" alt=""><br>
+slides not available yet</p>
+
+</section>
+<section>
+
+<h2>Discusses:</h2>
+<ul>
+  <li>the fundamental difference between a traditional and closure action</li>
+  <li>how the glimmer VM builds and flushes a stack (with amazing animations)</li>
+</ul>
+
+</section>
+<section>
+
+<h2>watch this talk if…</h2>
+<ul>
+  <li>you’re curious about how the glimmer VM works</li>
+  <li>why closure actions are exciting in ember</li>
+  <li>you want to be wow-ed by great animations</li>
+</ul>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Closing Keynote</h2>
+
+<ul>
+  <li><a href="https://twitter.com/sarahmei">Sarah Mei</a></li>
+  <li>Founder of RailsBridge, Consultant, Dev</li>
+</ul>
+
+<p><img src="/images/speakers/sarah-mei.png" alt=""><br>
+slides not available yet</p>
+
+</section>
+<section>
+
+<p>a really great talk <img class="emoji" alt=":raised_hands:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f64c.png"><br>
+if you’re a dev working on a team, watch it!</p>
+
+</section>
+<section>
+
+<h2>Codebase as a home</h2>
+
+<blockquote>
+  <p>our code is a place we live</p>
+</blockquote>
+
+</section>
+<section>
+
+<h2>Codebase as a home</h2>
+
+<ul>
+  <li>it’s not something to be “finished”</li>
+  <li>it should be “livable for the devs who live there”
+    <ul>
+      <li>this will look different depending on the kinds of devs who live there</li>
+    </ul>
+  </li>
+  <li>getting a new team member is like getting a new roommate
+    <ul>
+      <li>they might bring their old couch <img class="emoji" alt=":laughing:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f606.png">
+</li>
+      <li>they <strong>will</strong> change what it’s like to live there</li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+<section>
+
+<h2>“Hoarding” parallel</h2>
+<ul>
+  <li>clutter/problems in a codebase appear over time, not all at once</li>
+  <li>cleaning up all at once will not fix the problem
+    <ul>
+      <li>e.g. with a big refactor or rewrite</li>
+      <li>the <strong>people who live there</strong> will not change</li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+<section>
+
+<h2>Cleaning Up Tech Debt</h2>
+<ul>
+  <li>do it piece-by-piece
+    <ul>
+      <li>it’s like cleaning your house</li>
+      <li>make it part of your routine to clean as you go</li>
+    </ul>
+  </li>
+  <li>don’t make things worse</li>
+  <li>value improvement over consistency</li>
+  <li>do refactoring inline
+    <ul>
+      <li>clean up problems as you see them</li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+<section>
+
+<h2>Dealing with Tech Debt</h2>
+
+<h3>Don’t…</h3>
+<ul>
+  <li>Ask for permission. This is part of your job!</li>
+  <li>Ask for forgiveness. but, learn everytime!</li>
+</ul>
+
+<h3>Do…</h3>
+<ul>
+  <li>Ask for advice on refactoring. but, don’t always take the advice!</li>
+  <li>Work together because you all live here!</li>
+</ul>
+
+</section>
+<section>
+
+<h2>watch this video if…</h2>
+<ul>
+  <li>you’re a developer working on a team</li>
+  <li>you’re working for a company that’s high-growth</li>
+</ul>
+
+</section>
+</section>
+<section>
+
+<p>Thank you for listening! <img class="emoji" alt=":ear:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f442.png"></p>
+
+</section>
+<section>
+
+<h2>Questions?</h2>
+
+<p>Slides can be found at <a href="http://bit.ly/emberconf-2017">http://bit.ly/emberconf-2017</a></p>
+
+<p>Ben Limmer  <br>
+<a href="https://github.com/blimmer" class="user-mention">@blimmer</a></p>
+
+</section>
