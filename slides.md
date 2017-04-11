@@ -618,7 +618,7 @@ started off with a most excellent joke about
 * Engineer at Intercom
 
 ![](images/speakers/gavin-joyce.jpg)
-[video]((https://youtu.be/ZCHFjGSCqP4?t=7h41m)
+[video](https://youtu.be/ZCHFjGSCqP4?t=7h41m)
 
 ---
 
