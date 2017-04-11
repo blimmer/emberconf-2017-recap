@@ -22,7 +22,7 @@ nearly 1600 responses, done every year with emberconf
 
 ## By Version
 
-![](/images/survey/by_version.png)
+![](images/survey/by_version.png)
 
 many people are using LTS versions, though lots keep up to date with the most current, likely because of glimmer 2.
 
@@ -36,21 +36,21 @@ many people are using LTS versions, though lots keep up to date with the most cu
 
 ## "How long have you been working with Ember?"
 
-![](/images/survey/how_long_using_ember.png)
+![](images/survey/how_long_using_ember.png)
 
 almost half of survey participants using ember for > 2 years
 
 ---
 ## "How many people use your apps?"
 
-![](/images/survey/how_many_people_use.png)
+![](images/survey/how_many_people_use.png)
 
 most target hundreds or thousands of users
 
 ---
 ## "What does the server stack look like?"
 
-![](/images/survey/server_lang.png)
+![](images/survey/server_lang.png)
 
 ---
 
@@ -131,11 +131,11 @@ A great summary since the last EmberConf and what's next.
 
 ---
 
-![](/images/glimmer/initial_render.png)
+![](images/glimmer/initial_render.png)
 
 ---
 
-![](/images/glimmer/update.png)
+![](images/glimmer/update.png)
 
 ---
 
@@ -167,7 +167,7 @@ A great summary since the last EmberConf and what's next.
 
 ---
 
-![](/images/glimmer/size_comp.png)
+![](images/glimmer/size_comp.png)
 
 ---
 
@@ -186,7 +186,7 @@ A great summary since the last EmberConf and what's next.
 * [Samanta de Barros](https://twitter.com/sami_dbc)
 * Engineer at WyeWorks in Uruguay
 
-![](/images/speakers/samanta-de-barros.jpg)
+![](images/speakers/samanta-de-barros.jpg)
 [slides](https://speakerdeck.com/sdebarros/going-progressive-with-ember)
 
 ---
@@ -214,7 +214,7 @@ A great summary since the last EmberConf and what's next.
 * [Casey Watts](https://twitter.com/kyloma)
 * Engineer at Heroku, background in Software & Psychology
 
-![](/images/speakers/casey-watts.jpg)
+![](images/speakers/casey-watts.jpg)
 [slides](https://www.slideshare.net/CaseyWatts/neurobiologists-guide-to-mind-manipulation-08)
 
 ---
@@ -226,7 +226,7 @@ A great summary since the last EmberConf and what's next.
 
 ---
 
-![](/images/casey_watts/unhelpful_thinking_styles.png)
+![](images/casey_watts/unhelpful_thinking_styles.png)
 
 ---
 
@@ -240,7 +240,7 @@ A great summary since the last EmberConf and what's next.
 * [Godfrey Chan](https://twitter.com/chancancode)
 * Ruby on Rails and Ember Core Team Member
 
-![](/images/speakers/godfrey-chan.jpg)
+![](images/speakers/godfrey-chan.jpg)
 [slides](https://speakerdeck.com/chancancode/understanding-javascript-performance)
 
 ---
@@ -280,7 +280,7 @@ A great summary since the last EmberConf and what's next.
 * [Ingrid Epure](https://twitter.com/ingridepure)
 * Full-Stack Engineer at Intercom in Scotland
 
-![](/images/speakers/ingrid-epure.jpeg)
+![](images/speakers/ingrid-epure.jpeg)
 [slides](https://speakerdeck.com/ingride/counter-spells-and-the-art-of-keeping-you-application-safe)
 
 ---
@@ -304,7 +304,7 @@ A great summary since the last EmberConf and what's next.
 * [Oli Griffiths](https://twitter.com/Oligriffiths)
 * Engineer at Tumblr
 
-![](/images/speakers/oli-griffiths.png)
+![](images/speakers/oli-griffiths.png)
 no slides yet
 
 ---
@@ -326,7 +326,7 @@ no slides yet
 * [Jessica Jordan](https://twitter.com/jjordan_dev)
 * Biologist turned Front-End Engineer
 
-![](/images/speakers/jessica-jordan.jpg)
+![](images/speakers/jessica-jordan.jpg)
 [slides](https://jessica-jordan.github.io/animate-the-web-with-emberjs)
 
 ---
@@ -336,7 +336,7 @@ no slides yet
 * keyframe animation
 * web animation API
 
-![](/images/jessica_jordan/animation.gif)
+![](images/jessica_jordan/animation.gif)
 
 ---
 
@@ -352,7 +352,7 @@ no slides yet
 * [Balint Erdi](https://twitter.com/baaz)
 * Ember Consultant in Budapest
 
-![](/images/speakers/balint-erdi.jpg)
+![](images/speakers/balint-erdi.jpg)
 [slides](https://speakerdeck.com/balint/data-loading-patterns-with-json-api)
 
 ---
@@ -380,7 +380,7 @@ no slides yet
 * Miguel Camba
 * Ember, Ruby and Elixir Consultant in London
 
-![](/images/speakers/miguel-camba.png)
+![](images/speakers/miguel-camba.png)
 [game](https://gist.github.com/cibernox/5a46bb73d5690679a7fe07f6b4a5e55e)
 
 ---
@@ -420,7 +420,7 @@ questions?
 * [Edward Faulkner](https://twitter.com/eaf4)
 * Ember Core Team member, creator of Liquid Fire (ember's animation library)
 
-![](/images/speakers/edward-faulkner.png)
+![](images/speakers/edward-faulkner.png)
 [cardstack](http://cardstack.io/)
 
 ---
@@ -434,7 +434,7 @@ this presentation is potentially very relevant to the future of the ibotta websi
 
 ---
 
-![](/images/edward_faulkner/cardstack-flow.png)
+![](images/edward_faulkner/cardstack-flow.png)
 
 ---
 
@@ -460,7 +460,7 @@ this presentation is potentially very relevant to the future of the ibotta websi
 * [Jen Weber](https://twitter.com/jwwweber)
 * UI/UX Developer at BioBright 
 
-![](/images/speakers/jen-weber.jpg)
+![](images/speakers/jen-weber.jpg)
 [slides](https://drive.google.com/file/d/0BxL5EMSDOzzwOVhaeE1kNi0xWUk/view)
 
 ---
@@ -486,7 +486,7 @@ this presentation is potentially very relevant to the future of the ibotta websi
 * [Madison Kerndt](https://twitter.com/mkerndt)
 * Technical Associate at TechStars, attended Turing School
 
-![](/images/speakers/madison-kerndt.jpg)
+![](images/speakers/madison-kerndt.jpg)
 slides not available yet
 
 ---
@@ -514,7 +514,7 @@ slides not available yet
 * [Alex Matchneer](https://twitter.com/machty)
 * Ember Core Team Emeritus, FutureProof Retail 
 
-![](/images/speakers/alex-matchneer.png)
+![](images/speakers/alex-matchneer.png)
 [slides](http://machty.s3.amazonaws.com/emberconf2017/index.html)
 
 ---
@@ -540,7 +540,7 @@ slides not available yet
 * [Lauren Tan](https://twitter.com/sugarpirate_)
 * Engineer at Netflix
 
-![](/images/speakers/lauren-tan.jpg)
+![](images/speakers/lauren-tan.jpg)
 [slides](https://speakerdeck.com/poteto/emberconf-2017-confessions-of-an-ember-addon-author)
 
 ---
@@ -570,14 +570,14 @@ slides not available yet
 * [Serena Frisch](https://twitter.com/serifritsch)
 * Product Engineer at Intercom
 
-![](/images/speakers/serena-fritsch.png)
+![](images/speakers/serena-fritsch.png)
 slides not available yet
 
 ---
 
 started off with a most excellent joke about
 
-![](/images/serena_frisch/angular_merkel.png)
+![](images/serena_frisch/angular_merkel.png)
 
 ---
 
@@ -606,7 +606,7 @@ started off with a most excellent joke about
 * [Gavin Joyce](https://twitter.com/gavinjoyce)
 * Engineer at Intercom
 
-![](/images/speakers/gavin-joyce.jpg)
+![](images/speakers/gavin-joyce.jpg)
 slides not available yet
 
 ---
@@ -630,7 +630,7 @@ slides not available yet
 * [Sarah Mei](https://twitter.com/sarahmei)
 * Founder of RailsBridge, Consultant, Dev
 
-![](/images/speakers/sarah-mei.png)
+![](images/speakers/sarah-mei.png)
 slides not available yet
 
 ---
