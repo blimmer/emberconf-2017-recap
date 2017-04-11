@@ -188,6 +188,7 @@ A great summary since the last EmberConf and what's next.
 
 ![](images/speakers/samanta-de-barros.jpg)
 [slides](https://speakerdeck.com/sdebarros/going-progressive-with-ember)
+[video](https://www.youtube.com/watch?v=6j080toMEKk&feature=youtu.be&t=2h9m20s)
 
 ---
 
@@ -216,6 +217,7 @@ A great summary since the last EmberConf and what's next.
 
 ![](images/speakers/casey-watts.jpg)
 [slides](https://www.slideshare.net/CaseyWatts/neurobiologists-guide-to-mind-manipulation-08)
+[video](https://youtu.be/6j080toMEKk?t=2h50m)
 
 ---
 
@@ -242,6 +244,7 @@ A great summary since the last EmberConf and what's next.
 
 ![](images/speakers/godfrey-chan.jpg)
 [slides](https://speakerdeck.com/chancancode/understanding-javascript-performance)
+[video](https://youtu.be/6j080toMEKk?t=4h15m)
 
 ---
 
@@ -282,6 +285,7 @@ A great summary since the last EmberConf and what's next.
 
 ![](images/speakers/ingrid-epure.jpeg)
 [slides](https://speakerdeck.com/ingride/counter-spells-and-the-art-of-keeping-you-application-safe)
+[video](https://youtu.be/6j080toMEKk?t=4h58m)
 
 ---
 
@@ -305,7 +309,7 @@ A great summary since the last EmberConf and what's next.
 * Engineer at Tumblr
 
 ![](images/speakers/oli-griffiths.png)
-no slides yet
+[video](https://youtu.be/6j080toMEKk?t=5h44m)
 
 ---
 
@@ -328,6 +332,7 @@ no slides yet
 
 ![](images/speakers/jessica-jordan.jpg)
 [slides](https://jessica-jordan.github.io/animate-the-web-with-emberjs)
+[video](https://youtu.be/6j080toMEKk?t=5h48m30s)
 
 ---
 
@@ -354,6 +359,7 @@ no slides yet
 
 ![](images/speakers/balint-erdi.jpg)
 [slides](https://speakerdeck.com/balint/data-loading-patterns-with-json-api)
+[video](https://youtu.be/6j080toMEKk?t=7h29m30s)
 
 ---
 
@@ -382,6 +388,7 @@ no slides yet
 
 ![](images/speakers/miguel-camba.png)
 [game](https://gist.github.com/cibernox/5a46bb73d5690679a7fe07f6b4a5e55e)
+[video](https://youtu.be/6j080toMEKk?t=8h13m)
 
 ---
 
@@ -422,6 +429,7 @@ questions?
 
 ![](images/speakers/edward-faulkner.png)
 [cardstack](http://cardstack.io/)
+[video](https://youtu.be/ZCHFjGSCqP4?t=42m)
 
 ---
 
@@ -462,6 +470,7 @@ this presentation is potentially very relevant to the future of the ibotta websi
 
 ![](images/speakers/jen-weber.jpg)
 [slides](https://drive.google.com/file/d/0BxL5EMSDOzzwOVhaeE1kNi0xWUk/view)
+[video](https://youtu.be/ZCHFjGSCqP4?t=1h48m30s)
 
 ---
 
@@ -487,7 +496,7 @@ this presentation is potentially very relevant to the future of the ibotta websi
 * Technical Associate at TechStars, attended Turing School
 
 ![](images/speakers/madison-kerndt.jpg)
-slides not available yet
+[video](https://youtu.be/ZCHFjGSCqP4?t=2h27m)
 
 ---
 
@@ -516,6 +525,7 @@ slides not available yet
 
 ![](images/speakers/alex-matchneer.png)
 [slides](http://machty.s3.amazonaws.com/emberconf2017/index.html)
+[video](https://youtu.be/ZCHFjGSCqP4?t=4h27m)
 
 ---
 
@@ -542,6 +552,7 @@ slides not available yet
 
 ![](images/speakers/lauren-tan.jpg)
 [slides](https://speakerdeck.com/poteto/emberconf-2017-confessions-of-an-ember-addon-author)
+[video](https://youtu.be/ZCHFjGSCqP4?t=5h12m30s)
 
 ---
 
@@ -571,7 +582,7 @@ slides not available yet
 * Product Engineer at Intercom
 
 ![](images/speakers/serena-fritsch.png)
-slides not available yet
+[video](https://youtu.be/ZCHFjGSCqP4?t=6h58m30s)
 
 ---
 
@@ -607,7 +618,7 @@ started off with a most excellent joke about
 * Engineer at Intercom
 
 ![](images/speakers/gavin-joyce.jpg)
-slides not available yet
+[video]((https://youtu.be/ZCHFjGSCqP4?t=7h41m)
 
 ---
 
@@ -631,7 +642,7 @@ slides not available yet
 * Founder of RailsBridge, Consultant, Dev
 
 ![](images/speakers/sarah-mei.png)
-slides not available yet
+[video](https://youtu.be/ZCHFjGSCqP4?t=8h29m)
 
 ---
 
