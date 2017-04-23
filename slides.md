@@ -570,6 +570,162 @@ questions?
 ***
 ***
 
+:zap: talks!
+
+***
+***
+
+## Magnum A.P.I: Adventures in Docs
+
+* [David Baker](https://twitter.com/acorncom)
+* [Todd Jordan](https://twitter.com/tddjordan)
+* Learning Core Team
+
+![](images/speakers/david-baker.jpeg) ![](images/speakers/todd-jordan.jpg)
+
+[video](https://www.youtube.com/watch?v=043GIQQDkO8)
+
+---
+
+## Discusses:
+* Versioned API docs for ember :raised_hands:
+* New infrastructure for docs
+* Search :magnifying_glass:
+
+[beta docs](https://emberjs.com/api-beta/ember/2.12.0/namespaces/Ember)
+
+---
+
+## watch this talk if...
+* you want to know about the architecture of the new docs site
+* you're curious about the future of the emberjs.com site
+
+***
+***
+
+## Ember + VR: Bring Your A-Frame
+
+* [Kelly Selden](https://twitter.com/kellyselden)
+* Engineer at Classmates.com
+
+![](images/speakers/kelly-selden.jpeg)
+[video](https://www.youtube.com/watch?v=I3o3lV_yfIE)
+
+---
+
+## Discusses:
+* A-Frame library for VR ("an HTML wrapper for three.js and WebVR")
+* How to use Ember to manipulate A-Frame markup
+
+---
+
+## watch this talk if...
+* you're interested in VR technologies
+
+***
+***
+
+## Baby's First Open Source Project
+
+* [Liz Baillie](https://twitter.com/_lbaillie)
+* Engineer at Tilde
+
+![](images/speakers/liz-baillie.jpg)
+[video](https://www.youtube.com/watch?v=F1UQLBIezHk)
+
+---
+
+## Discusses:
+* Degenderettes safety app
+* Building an OSS project from scratch
+* The ember community helping with OSS projects
+
+---
+
+## watch this talk if...
+* you want to start your own open-source project
+* to learn strategies for recruiting others to help with your project
+
+***
+***
+
+## What's new in QUnit
+
+* [Trent Willis](https://twitter.com/trentmwillis)
+* Lead Maintainer for QUnit
+
+![](images/speakers/trent-willis.jpg)
+
+[video](https://www.youtube.com/watch?v=8SzNe0gy_mY)
+
+---
+
+## Discusses:
+* QUnit CLI for node testing
+* QUnit `todo` tests (allows errors in tests for partially implemented features)
+* new assertion types (order dependent tests with `step`)
+
+---
+
+## watch this talk if...
+* you have a project that uses QUnit
+* you want to use qunit for your node projects
+
+***
+***
+
+## Instrumenting Ember Apps with Heimdall
+
+* [Chris Thoburn](https://twitter.com/Runspired)
+* Engineer at LinkedIn
+
+![](images/speakers/chris-thoburn.jpeg)
+
+[video](https://www.youtube.com/watch?v=MxmVV3dcXZk)
+
+---
+
+## Discusses:
+* debugging / monitoring performance in your JS apps
+* core concepts of heimdall (`timers`, `counters`) and when to use them
+
+---
+
+## watch this talk if...
+* you want to try heimdall to debug or monitor perforamnce in your app
+
+***
+***
+
+## TypeScript & Ember
+* [Daniel Rosenwasser](https://twitter.com/drosenwasser)
+* Program Manager of TypeScript @ Microsoft
+
+![](images/speakers/daniel-rosenwasser.jpg)
+
+[video](https://www.youtube.com/watch?v=951HiqnNQ1w)
+
+---
+
+## Discusses:
+* Why TypeScript?
+* Shows some examples of editor / in-line help with TypeScript
+* TypeScript language support / autocomplete
+
+---
+
+## watch this talk if...
+* you have never used TypeScript
+* you're wondering what the hype is with TypeScript
+
+***
+***
+
+## </ :zap: >
+
+***
+***
+
 ## Spin Me a Yarn
 
 * [Serena Frisch](https://twitter.com/serifritsch)
