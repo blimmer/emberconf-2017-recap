@@ -3,14 +3,13 @@
 Ben Limmer  
 @blimmer
 
-4/11/2017
+4/26/2017
 
 ---
 
 ## Ember Community Survey
 ## Keynote
 ## Talk by Talk
-## Questions from the :peanuts: gallery
 
 ***
 
@@ -70,6 +69,7 @@ A great summary since the last EmberConf and what's next.
 * [Yehuda Katz](https://twitter.com/wycats) (Ember, RoR, jQuery core teams, yarn, hbs, etc, etc)
 * [Tom Dale](https://twitter.com/tomdale) (Ember Core Team)
 
+[video](https://www.youtube.com/watch?v=TEuY4GqwrUE)
 ---
 
 ## Main Topics
@@ -142,7 +142,7 @@ A great summary since the last EmberConf and what's next.
 ## Future of Glimmer and Ember
 * "this is the component API we want for Ember"
 * "ember is still the choice for big web applications"
-* "glimmer is the choice for small mobile apps that need to be very performant" 
+* "glimmer is the choice for small mobile apps that need to be very performant"
 
 ---
 
@@ -188,7 +188,7 @@ A great summary since the last EmberConf and what's next.
 
 ![](images/speakers/samanta-de-barros.jpg)
 [slides](https://speakerdeck.com/sdebarros/going-progressive-with-ember)
-[video](https://www.youtube.com/watch?v=6j080toMEKk&feature=youtu.be&t=2h9m20s)
+[video](https://www.youtube.com/watch?v=OR1Tk_bwmZo)
 
 ---
 
@@ -217,7 +217,7 @@ A great summary since the last EmberConf and what's next.
 
 ![](images/speakers/casey-watts.jpg)
 [slides](https://www.slideshare.net/CaseyWatts/neurobiologists-guide-to-mind-manipulation-08)
-[video](https://youtu.be/6j080toMEKk?t=2h50m)
+[video](https://www.youtube.com/watch?v=AtefvXagutM)
 
 ---
 
@@ -244,7 +244,7 @@ A great summary since the last EmberConf and what's next.
 
 ![](images/speakers/godfrey-chan.jpg)
 [slides](https://speakerdeck.com/chancancode/understanding-javascript-performance)
-[video](https://youtu.be/6j080toMEKk?t=4h15m)
+[video](https://www.youtube.com/watch?v=7ylQThr3EeQ)
 
 ---
 
@@ -285,7 +285,7 @@ A great summary since the last EmberConf and what's next.
 
 ![](images/speakers/ingrid-epure.jpeg)
 [slides](https://speakerdeck.com/ingride/counter-spells-and-the-art-of-keeping-you-application-safe)
-[video](https://youtu.be/6j080toMEKk?t=4h58m)
+[video](https://www.youtube.com/watch?v=kPar8n9zaHo)
 
 ---
 
@@ -309,7 +309,7 @@ A great summary since the last EmberConf and what's next.
 * Engineer at Tumblr
 
 ![](images/speakers/oli-griffiths.png)
-[video](https://youtu.be/6j080toMEKk?t=5h44m)
+[video](https://www.youtube.com/watch?v=AqJk9P66dsU)
 
 ---
 
@@ -332,7 +332,7 @@ A great summary since the last EmberConf and what's next.
 
 ![](images/speakers/jessica-jordan.jpg)
 [slides](https://jessica-jordan.github.io/animate-the-web-with-emberjs)
-[video](https://youtu.be/6j080toMEKk?t=5h48m30s)
+[video](https://www.youtube.com/watch?v=wFJPIjRTIVU)
 
 ---
 
@@ -359,7 +359,7 @@ A great summary since the last EmberConf and what's next.
 
 ![](images/speakers/balint-erdi.jpg)
 [slides](https://speakerdeck.com/balint/data-loading-patterns-with-json-api)
-[video](https://youtu.be/6j080toMEKk?t=7h29m30s)
+[video](https://www.youtube.com/watch?v=kPxiiAGMSzE)
 
 ---
 
@@ -388,7 +388,7 @@ A great summary since the last EmberConf and what's next.
 
 ![](images/speakers/miguel-camba.png)
 [game](https://gist.github.com/cibernox/5a46bb73d5690679a7fe07f6b4a5e55e)
-[video](https://youtu.be/6j080toMEKk?t=8h13m)
+[video](https://www.youtube.com/watch?v=MpFudGJn2J0)
 
 ---
 
@@ -429,12 +429,7 @@ questions?
 
 ![](images/speakers/edward-faulkner.png)
 [cardstack](http://cardstack.io/)
-[video](https://youtu.be/ZCHFjGSCqP4?t=42m)
-
----
-
-this presentation is potentially very relevant to the future of the ibotta website  
-:sun_with_face:
+[video](https://www.youtube.com/watch?v=9DsBHKj90EY)
 
 ---
 
@@ -458,7 +453,6 @@ this presentation is potentially very relevant to the future of the ibotta websi
 ## watch this talk if interested in...
 * building an app that will be frequently edited / appended after delivery
 * leveraging the power of a CMS to drive the content for an ember app
-* helping build the future of ibotta.com
 
 ***
 ***
@@ -466,11 +460,11 @@ this presentation is potentially very relevant to the future of the ibotta websi
 ## SVG Animation and Interaction in Ember
 
 * [Jen Weber](https://twitter.com/jwwweber)
-* UI/UX Developer at BioBright 
+* UI/UX Developer at BioBright
 
 ![](images/speakers/jen-weber.jpg)
 [slides](https://drive.google.com/file/d/0BxL5EMSDOzzwOVhaeE1kNi0xWUk/view)
-[video](https://youtu.be/ZCHFjGSCqP4?t=1h48m30s)
+[video](https://www.youtube.com/watch?v=ZC3lD_DFlkc)
 
 ---
 
@@ -496,7 +490,7 @@ this presentation is potentially very relevant to the future of the ibotta websi
 * Technical Associate at TechStars, attended Turing School
 
 ![](images/speakers/madison-kerndt.jpg)
-[video](https://youtu.be/ZCHFjGSCqP4?t=2h27m)
+[video](https://www.youtube.com/watch?v=BdUL_txyqcw)
 
 ---
 
@@ -518,14 +512,14 @@ this presentation is potentially very relevant to the future of the ibotta websi
 ***
 ***
 
-## State, Time and Concurrency 
+## State, Time and Concurrency
 
 * [Alex Matchneer](https://twitter.com/machty)
-* Ember Core Team Emeritus, FutureProof Retail 
+* Ember Core Team Emeritus, FutureProof Retail
 
 ![](images/speakers/alex-matchneer.png)
 [slides](http://machty.s3.amazonaws.com/emberconf2017/index.html)
-[video](https://youtu.be/ZCHFjGSCqP4?t=4h27m)
+[video](https://www.youtube.com/watch?v=VEzVDOmY-dc)
 
 ---
 
@@ -545,14 +539,14 @@ this presentation is potentially very relevant to the future of the ibotta websi
 ***
 ***
 
-## Confessions of an Ember Add-on Author 
+## Confessions of an Ember Add-on Author
 
 * [Lauren Tan](https://twitter.com/sugarpirate_)
 * Engineer at Netflix
 
 ![](images/speakers/lauren-tan.jpg)
 [slides](https://speakerdeck.com/poteto/emberconf-2017-confessions-of-an-ember-addon-author)
-[video](https://youtu.be/ZCHFjGSCqP4?t=5h12m30s)
+[video](https://www.youtube.com/watch?v=ln_DvmQsvis)
 
 ---
 
@@ -576,13 +570,13 @@ this presentation is potentially very relevant to the future of the ibotta websi
 ***
 ***
 
-## Spin Me a Yarn 
+## Spin Me a Yarn
 
 * [Serena Frisch](https://twitter.com/serifritsch)
 * Product Engineer at Intercom
 
 ![](images/speakers/serena-fritsch.png)
-[video](https://youtu.be/ZCHFjGSCqP4?t=6h58m30s)
+[video](https://www.youtube.com/watch?v=4VsLIBb5kxM)
 
 ---
 
@@ -618,7 +612,7 @@ started off with a most excellent joke about
 * Engineer at Intercom
 
 ![](images/speakers/gavin-joyce.jpg)
-[video](https://youtu.be/ZCHFjGSCqP4?t=7h41m)
+[video](https://www.youtube.com/watch?v=A5k2u7AZf6g)
 
 ---
 
@@ -636,13 +630,13 @@ started off with a most excellent joke about
 ***
 ***
 
-## Closing Keynote 
+## Closing Keynote
 
 * [Sarah Mei](https://twitter.com/sarahmei)
 * Founder of RailsBridge, Consultant, Dev
 
 ![](images/speakers/sarah-mei.png)
-[video](https://youtu.be/ZCHFjGSCqP4?t=8h29m)
+[video](https://www.youtube.com/watch?v=mz3l_oEA2cU)
 
 ---
 
