@@ -692,7 +692,7 @@ questions?
 ---
 
 ## watch this talk if...
-* you want to try heimdall to debug or monitor perforamnce in your app
+* you want to try heimdall to debug or monitor performance in your app
 
 ***
 ***
